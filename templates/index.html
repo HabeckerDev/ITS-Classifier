@@ -1,0 +1,23 @@
+<html>
+...
+<body>
+    <h1>ITS Ticket Classification</h1>
+    <div>
+        <form method="post" action="/predict">
+            <textarea rows="12" cols="60" name="content" placeholder="Enter your ticket here"
+                autocomplete="off">{{ email }}</textarea>
+            <div>
+                <button type="submit">
+                    Button
+                </button>
+                <a href="/">Reset</a>
+            </div>
+        </form>
+
+    </div>
+    <div>
+        <h2 style="color: red">{{ prediction }}</h2>
+        <!-- <p id="display"></p> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+version: "3.3"
+services:
+  python:
+    container_name: "itsclassifier_python_api"
+    build:
+      context: ./python
+    volumes:
+      - ./python:/app
+    ports:
+      - "6000:6000"
+    expose:
+      - "6000"
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_PORT=4000
+  react:
+    container_name: "itsclassifier_react"
+    build:
+      context: ./client
+    environment:
+      NODE_ENV: "development"
+    ports:
+      - "3000:3000"
+    expose:
+      - "3000"
+    volumes:
+      - ./client/src:/app/src
+volumes:
+  react:
+  node:
