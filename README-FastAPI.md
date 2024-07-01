@@ -185,6 +185,6 @@ Ensure the following files are correctly set up:
 
 ## Conclusion
 
-This documentation provides a comprehensive overview of the ITS-Classifier API, including installation instructions, how to run the server, API endpoints, project structure, configuration, and model details. For any further questions or issues, please refer to the FastAPI and Transformers documentation or contact the project maintainer.
+This documentation provides a comprehensive overview of the ITS-Classifier API, including installation instructions, how to run the server, API endpoints, project structure, configuration, and model details. For any further questions or issues, please refer to the FastAPI and Transformers documentation.
 
 ---
